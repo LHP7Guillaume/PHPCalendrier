@@ -25,9 +25,9 @@ $arrayMonth = [1 => "Janvier", 2 => "Fevrier", 3 => "Mars", 4 => "Avril", 5 => "
 
 <body>
     <div class="text-center mt-5">
-        <form action="index.php" method="post">
+        <form action="index.php" method="POST">
             <select name="month" id="month">
-                <option selected="selected">Mois</option>
+                <option value="">Mois</option>
                 <?php
                 foreach ($arrayMonth as $keyMonth => $month) { { ?>
                         <option value="<?= $month ?>"><?= $month ?></option>;
@@ -43,7 +43,7 @@ $arrayMonth = [1 => "Janvier", 2 => "Fevrier", 3 => "Mars", 4 => "Avril", 5 => "
                     <option value="<?= $i ?>"><?= $i ?></option>;
                 <?php } ?>
             </select>
-            <input name="display"  type="submit">
+            <input class="button" name="display" type="submit" value="Afficher">
 
         </form>
     </div>
